@@ -59,7 +59,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-11-27 20:05:40',
+  postUpdate: '2023-11-29 20:20:33',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -272,6 +272,14 @@ Harris角点检测、Shi-Tomasi角点检测、FAST角点检测、ORB角点检测
 纹理特征（Texture）
 纹理是图像中重复或规律的局部结构，描述了物体的细节特征。
 常用的纹理特征包括灰度共生矩阵（GLCM）、局部二值模式 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/14949.html')"><div class="post_cover left"><a href="/posts/14949.html" title="常用激活函数总结" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/c.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用激活函数总结" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">深度学习</div><a class="unvisited-post" href="/posts/14949.html" title="常用激活函数总结">未读</a></div><a class="article-title" href="/posts/14949.html" title="常用激活函数总结">常用激活函数总结</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-21T09:27:50.000Z" title="发表于 2023-08-21 17:27:50">2023-08-21</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>激活函数</span></a></span></div><div class="content">relu
+SiLU$$SiLU &#x3D; x∗sigmoid(x)&#x3D;\frac{x}{1+_e^x}$$
+Swish$$Swish &#x3D; x * sigmoid(\beta x)$$
+Mish$$Mish&#x3D;x * tanh(ln(1+e^x))$$
+以上无边界(即正值可以达到任何高度)避免了由于封顶而导致的饱和。理论上对负值的轻微允许允许更好的梯度流，而不是像ReLU中那样的硬零边界。
+最后，可能也是最重要的，目前的想法是，平滑的激活函数允许更好的信息深入神经网络，从而得到更好的准确性和泛化。
+
+https://zhuanlan.zhihu.com/p/84418420
+
 </div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/16107.html')"><div class="post_cover left"><a href="/posts/16107.html" title="Hello World" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/c.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/posts/16107.html" title="Hello World">未读</a></div><a class="article-title" href="/posts/16107.html" title="Hello World">Hello World</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-21T08:41:06.001Z" title="发表于 2023-08-21 16:41:06">2023-08-21</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
